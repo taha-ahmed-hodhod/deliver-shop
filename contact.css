@@ -1,0 +1,473 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Nunito', sans-serif; */
+
+}
+
+body {
+    margin: 0;
+    font-family: "Mukta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.nav-1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav-left input {
+    border: none;
+    /* background-color: aqua; */
+    padding: 10px 10px;
+    padding-left: 40px;
+    display: block;
+    width: 200px;
+    height: calc(2.25rem + 2px);
+    font-size: 23px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.nav-left i {
+    position: absolute;
+    top: 84px;
+    left: 280px;
+    color: gray;
+    font-size: 20px;
+}
+
+.nav-left input:focus {
+    outline: 0;
+    padding-left: 30px;
+}
+
+
+
+.nav-right .icons {
+    display: flex;
+    font-size: 20px;
+    color: rgb(114, 113, 113);
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-right .icons .person {
+    margin-right: 10px;
+}
+
+.nav-right .icons .person:hover {
+    color: #000000;
+}
+
+.nav-right .icons .love {
+    margin-right: 10px;
+}
+
+.nav-right .icons .love:hover {
+    color: #000000;
+}
+
+.nav-right .market:hover {
+    color: #000000;
+}
+
+.nav-center {
+    width: 300px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+.nav-center p {
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+hr {
+    margin-top: 10px;
+    width: 1500px;
+    margin-left: 200px;
+
+}
+
+.nav-2 {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.nav-2 a {
+    font-size: 13px;
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+}
+
+.nav-2 .shop a {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .about :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .shop :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .catalogue :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .new :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .contact :hover {
+    color: rgb(162, 118, 219);
+}
+
+.vouh {
+    background-color: rgba(162, 118, 219, 0.11);
+    height: 60px;
+
+}
+
+.vouh p {
+    padding-top: 15px;
+    margin-left: 200px;
+}
+
+.vouh span {
+    color: rgb(138, 80, 214);
+}
+
+.center-input-2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+.center-left {
+    margin-top: 100px;
+
+}
+
+.center-left h3 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.center-input-2 .center-left {
+    margin-right: 60px;
+}
+
+.center-input-2 .center-left .div {
+    padding-top: 48px;
+    padding-left: 90px;
+}
+
+.name-input input {
+    margin-right: 15px;
+}
+
+.center-left .input-type-name input {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #9264dd;
+    border-radius: 3px;
+}
+
+.center-left .email {
+    margin-top: 10px;
+}
+
+.center-left .email input {
+    width: 470px;
+    padding: 20px;
+    border: 1px solid #9264dd;
+    border-radius: 3px;
+}
+
+.center-left .supject {
+    margin-top: 10px;
+}
+
+.center-left .supject input {
+    width: 470px;
+    padding: 20px;
+    border: 1px solid #9264dd;
+    border-radius: 3px;
+}
+
+.center-left .massage {
+    margin-top: 10px;
+}
+
+.center-left .massage textarea {
+    width: 470px;
+    padding: 20px;
+    border: 1px solid #9264dd;
+    border-radius: 3px;
+}
+
+.center-left .send button {
+    width: 513px;
+    height: 50px;
+    color: #f5f5f5;
+    background-color: #9264dd;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.center-left .send button:hover {
+    box-shadow: 0 0 5px 5px #7150a7;
+    margin-bottom: 5px;
+}
+
+.center-left .input-type-name {
+    display: flex;
+}
+
+.input-type-name .name-input {
+    margin-right: 10px;
+}
+
+.center-input-2 .div {
+    border: 1px solid rgb(226, 223, 223);
+
+    width: 600px;
+    height: 600px;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.center-right .caption {
+    border: 1px solid rgb(199, 197, 197);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.center-right .caption h3 {
+    color: #9264dd;
+    font-weight: 100;
+}
+
+.center-right .caption p {
+    color: rgb(119, 118, 118);
+    font-weight: 100;
+}
+
+.center-right {
+    margin-top: 120px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer .foot-1 {
+    margin: 30px;
+}
+
+footer .foot-1 .link-1 {
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+footer .foot-1 p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer .foot-1 a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+footer .foot-1 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-2 {
+    margin: 30px;
+}
+
+footer .foot-2 a {
+    align-items: center;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+footer .foot-2 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-3 {
+    margin: 30px;
+}
+
+footer .foot-3 a {
+    align-items: center;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+footer .foot-3 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-4 {
+    margin: 30px;
+}
+
+footer .foot-4 a {
+    align-items: center;
+    text-decoration: none;
+    color: #631ed1;
+}
+
+footer .foot-4 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-4 img {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer .foot-5 .poo {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+footer .foot-5 .location {
+    display: flex;
+}
+
+footer .foot-5 .location i {
+    color: #631ed1;
+    margin-right: 10px;
+}
+
+footer .foot-5 .call {
+    display: flex;
+}
+
+footer .foot-5 .call i {
+    color: #631ed1;
+    margin-right: 10px;
+}
+
+footer .foot-5 .email-1 {
+    display: flex;
+    margin-top: 10px;
+}
+
+footer .foot-5 .email-1 i {
+    color: #631ed1;
+    margin-right: 10px;
+}
+
+footer .input {
+    margin-top: 20px;
+}
+
+footer .input p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer .input input {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 147, 147);
+    margin-top: 1px;
+
+}
+
+footer .input button {
+    padding: 17px;
+    position: absolute;
+    color: white;
+    background-color: #631ed1;
+    right: 437px;
+    top: 1585px;
+    border-radius: 5px;
+}
+
+footer .input button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .input button:hover {
+    padding: 17px;
+    position: absolute;
+    color: white;
+    background-color: #7150a7;
+    right: 437px;
+    top: 3884px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px #aaa;
+
+
+}
+
+footer .input button:focus {
+    border: #9264dd;
+    outline: none;
+}
+
+.footer-text {
+    text-align: center;
+    color: rgb(116, 114, 114);
+    padding: 100px;
+
+}
+
+.footer-text span {
+    color: #631ed1;
+    font-size: 20px;
+}
+
+.footer-text span a {
+    text-decoration: none;
+}

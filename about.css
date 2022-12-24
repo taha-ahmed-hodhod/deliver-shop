@@ -1,0 +1,583 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Nunito', sans-serif; */
+
+}
+
+body {
+    margin: 0;
+    font-family: "Mukta", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+.nav-1 {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.nav-left input {
+    border: none;
+    /* background-color: aqua; */
+    padding: 10px 10px;
+    padding-left: 40px;
+    display: block;
+    width: 200px;
+    height: calc(2.25rem + 2px);
+    font-size: 23px;
+    line-height: 1.5;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border-radius: 0.25rem;
+    -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.nav-left i {
+    position: absolute;
+    top: 84px;
+    left: 280px;
+    color: gray;
+    font-size: 20px;
+}
+
+.nav-left input:focus {
+    outline: 0;
+    padding-left: 30px;
+}
+
+
+
+.nav-right .icons {
+    display: flex;
+    font-size: 20px;
+    color: rgb(114, 113, 113);
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-right .icons .person {
+    margin-right: 10px;
+}
+
+.nav-right .icons .person:hover {
+    color: #000000;
+}
+
+.nav-right .icons .love {
+    margin-right: 10px;
+}
+
+.nav-right .icons .love:hover {
+    color: #000000;
+}
+
+.nav-right .market:hover {
+    color: #000000;
+}
+
+.nav-center {
+    width: 300px;
+    text-align: center;
+    margin-right: 200px;
+}
+
+.nav-center p {
+    border: 2px solid black;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+hr {
+    margin-top: 10px;
+    width: 1500px;
+    margin-left: 200px;
+    background-color: rgb(173, 22, 22);
+}
+
+.nav-2 {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.nav-2 a {
+    font-size: 13px;
+    text-decoration: none;
+    margin: 10px;
+    color: #000000;
+
+
+}
+
+.nav-2 .about a {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .about :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .shop :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .catalogue :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .new :hover {
+    color: rgb(162, 118, 219);
+}
+
+.nav-2 .contact :hover {
+    color: rgb(162, 118, 219);
+}
+
+.vouh {
+    background-color: rgba(162, 118, 219, 0.11);
+    height: 60px;
+
+}
+
+.vouh p {
+    padding-top: 15px;
+    margin-left: 200px;
+}
+
+.vouh span {
+    color: rgb(138, 80, 214);
+}
+
+/* center */
+.sasa-1 {
+    color: #9264dd;
+    justify-content: center;
+    text-align: center;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+.sasa-2 h3 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.sasa-3 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.sasa-3 .photo-sa img {
+    width: 650px;
+}
+
+.sasa-3 .text-sa {
+    /* text-align: center; */
+    margin-top: 100px;
+}
+
+.sasa-3 .text-sa button {
+    border: none;
+    background-color: #6610f2;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.sasa-3 .text-sa button:hover {
+    border: none;
+    background-color: #5d359c;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 3px #aaa;
+    margin-bottom: 10px;
+}
+
+.sasa-3 .text-sa a {
+    text-decoration: none;
+    color: #020202;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.sasa-3 .text-sa p {
+    margin-top: 20px;
+    color: rgb(83, 83, 83);
+}
+
+.taha {
+    display: flex;
+    justify-content: center;
+
+}
+
+.taha .taha-1 {
+    margin: 30px;
+}
+
+.taha .taha-1 img {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+
+}
+
+.taha .taha-1 .text-ai {
+    text-align: center;
+
+}
+
+.taha .taha-1 .text-ai p {
+    color: rgb(170, 169, 169);
+}
+
+.taha .taha-1 p {
+    text-align: center;
+    color: rgb(90, 89, 89);
+    margin-top: 10px;
+}
+
+.taha .taha-2 {
+    margin: 30px;
+}
+
+
+.taha .taha-2 img {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.taha .taha-2 .text-ai-2 {
+    text-align: center;
+}
+
+.taha .taha-2 .text-ai-2 p {
+    color: rgb(150, 147, 147);
+}
+
+.taha .taha-2 p {
+    text-align: center;
+    color: rgb(104, 102, 102);
+    margin-top: 10px;
+}
+
+.taha-3 {
+    margin: 30px;
+}
+
+.taha .taha-3 img {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.taha .taha-3 .text-ai-3 {
+    text-align: center;
+}
+
+.taha .taha-3 .text-ai-3 p {
+    color: rgb(150, 147, 147);
+}
+
+.taha .taha-3 p {
+    text-align: center;
+    color: rgb(104, 102, 102);
+    margin-top: 10px;
+}
+
+.taha .taha-4 {
+    margin: 30px;
+}
+
+.taha .taha-4 img {
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.taha .taha-4 .text-ai-4 {
+    text-align: center;
+}
+
+.taha .taha-4 .text-ai-4 p {
+    color: rgb(150, 147, 147);
+}
+
+.taha .taha-4 p {
+    text-align: center;
+    color: rgb(104, 102, 102);
+    margin-top: 10px;
+}
+
+.caption-center h1 {
+    text-align: center;
+    font-size: 100px;
+    color: #9264dd;
+}
+
+.caption-center h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100px;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    height: 200px;
+}
+
+.icon-text .truck {
+    display: flex;
+    margin-right: 50px;
+}
+
+.icon-text .truck .text-icon p {
+    color: rgb(110, 108, 108);
+}
+
+.icon-text .truck i {
+    font-size: 40px;
+    color: #6610f2;
+    margin-right: 20px;
+}
+
+.icon-text .rotate {
+    display: flex;
+    margin-right: 50px;
+}
+
+.icon-text .rotate .icon-rotate p {
+    color: rgb(110, 108, 108);
+}
+
+.icon-text .rotate i {
+    font-size: 40px;
+    color: #6610f2;
+    margin-right: 20px;
+}
+
+.icon-text .question {
+    display: flex;
+    margin-right: 20px;
+}
+
+.icon-text .question .icon-question p {
+    color: rgb(110, 108, 108);
+}
+
+.icon-text .question i {
+    font-size: 40px;
+    color: #6610f2;
+    margin-right: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+footer .foot-1 {
+    margin: 30px;
+}
+
+footer .foot-1 .link-1 {
+    margin-top: 60px;
+    margin-bottom: 90px;
+}
+
+footer .foot-1 p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer .foot-1 a {
+    margin-top: 50px;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+footer .foot-1 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-2 {
+    margin: 30px;
+}
+
+footer .foot-2 a {
+    align-items: center;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+footer .foot-2 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-3 {
+    margin: 30px;
+}
+
+footer .foot-3 a {
+    align-items: center;
+    text-decoration: none;
+    color: rgb(100, 99, 99);
+}
+
+footer .foot-3 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-4 {
+    margin: 30px;
+}
+
+footer .foot-4 a {
+    align-items: center;
+    text-decoration: none;
+    color: #631ed1;
+}
+
+footer .foot-4 a:hover {
+    color: #631ed1;
+}
+
+footer .foot-4 img {
+    width: 250px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer .foot-5 .poo {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+footer .foot-5 .location {
+    display: flex;
+}
+
+footer .foot-5 .location i {
+    color: #631ed1;
+    margin-right: 10px;
+}
+
+footer .foot-5 .call {
+    display: flex;
+}
+
+footer .foot-5 .call i {
+    color: #631ed1;
+    margin-right: 10px;
+}
+
+footer .foot-5 .email-1 {
+    display: flex;
+    margin-top: 10px;
+}
+
+footer .foot-5 .email-1 i {
+    color: #631ed1;
+    margin-right: 10px;
+}
+
+footer .input {
+    margin-top: 20px;
+}
+
+footer .input p {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+footer .input input {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 147, 147);
+    margin-top: 1px;
+
+}
+
+footer .input button {
+    padding: 17px;
+    position: absolute;
+    color: white;
+    background-color: #631ed1;
+    right: 437px;
+    top: 2248px;
+    border-radius: 5px;
+}
+
+footer .input button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .input button:hover {
+    padding: 17px;
+    position: absolute;
+    color: white;
+    background-color: #7150a7;
+    right: 437px;
+    top: 2249px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px #aaa;
+
+
+}
+
+footer .input button:focus {
+    border: #9264dd;
+    outline: none;
+}
+
+.footer-text {
+    text-align: center;
+    color: rgb(116, 114, 114);
+    padding: 100px;
+
+}
+
+.footer-text span {
+    color: #631ed1;
+    font-size: 20px;
+}
+
+.footer-text span a {
+    text-decoration: none;
+}
