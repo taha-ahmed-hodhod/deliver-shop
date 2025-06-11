@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /* variables */
 :root {
     --main-padding: 60px;
@@ -114,7 +115,7 @@ header form input {
     header .container {
         text-align: center;
         border-color: #eee;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     header .container form {
@@ -124,11 +125,14 @@ header form input {
 
     header .container .main-title {
         width: 100%;
-        order: -1;
     }
 
     header .container ul {
-        margin: 20px auto 10px;
+        margin: 15px auto 10px;
+    }
+
+    header .container ul i {
+        font-size: 15px;
     }
 }
 
@@ -195,15 +199,46 @@ nav ul li a {
 }
 
 @media (max-width:767px) {
+    header {
+        padding: 10px;
+    }
+
     nav ul li a {
-        font-size: 11px;
+        font-size: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 15px;
     }
 
     .page-side {
         text-align: center;
         padding: 15px 0 !important;
     }
+
+    nav .container {
+        display: flex;
+        justify-content: center;
+        padding: 0px 0 15px;
+    }
+
+    header .main-title {
+        font-size: 20px;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 7px 15px;
+    }
+       footer .last-text {
+        margin-top: 0px;
+        font-size: 12px !important;
+    }
+
+    footer .last-text a {
+        font-size: 12px !important;
+    }
 }
+
 
 nav ul li a:hover,
 nav ul li a.active {
@@ -474,4 +509,16 @@ footer .last-text a {
     footer .foot .input p {
         margin-top: 20px;
     }
+}
+@media (max-width:767px){
+  footer .last-text{
+    margin-top: 0px;
+    font-size: 12px !important;
+  }
+    footer .last-text a{
+      font-size: 12px;
+    }
+  footer{
+  padding: 30px 0 0;
+}
 }
