@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 /* variables */
 :root {
     --main-padding: 60px;
@@ -20,7 +21,7 @@ html {
 
 body {
     /* font-family: "Work Sans", sans-serif; */
-font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 ul {
@@ -114,7 +115,7 @@ header form input {
     header .container {
         text-align: center;
         border-color: #eee;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     header .container form {
@@ -124,11 +125,14 @@ header form input {
 
     header .container .main-title {
         width: 100%;
-        order: -1;
     }
 
     header .container ul {
-        margin: 20px auto 10px;
+        margin: 15px auto 10px;
+    }
+
+    header .container ul i {
+        font-size: 15px;
     }
 }
 
@@ -195,13 +199,35 @@ nav ul li a {
 }
 
 @media (max-width:767px) {
+    header {
+        padding: 10px;
+    }
+
     nav ul li a {
-        font-size: 11px;
+        font-size: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 15px;
     }
 
     .page-side {
         text-align: center;
         padding: 15px 0 !important;
+    }
+
+    nav .container {
+        display: flex;
+        justify-content: center;
+        padding: 0px 0 15px;
+    }
+
+    header .main-title {
+        font-size: 20px;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 7px 15px;
     }
 }
 
@@ -215,10 +241,12 @@ nav ul li a.active {
     padding: 25px 0 25px;
     color: #777;
 }
-.page-side span{
+
+.page-side span {
     color: var(--main-color);
 
 }
+
 /* big sale section */
 .big-sale {
     padding-top: var(--main-padding-2);
@@ -285,6 +313,23 @@ nav ul li a.active {
     .big-sale .boxs .info {
         width: 100%;
     }
+    .big-sale {
+    padding-top: 30px;
+}
+
+.big-sale .container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-bottom: 1px solid #eee;
+}
+.master-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 0px;
+}
 }
 
 /* the team section */
@@ -326,7 +371,14 @@ nav ul li a.active {
     line-height: 1.6;
     color: rgb(104, 102, 102);
 }
-
+@media (max-width:767px){
+    .the-team{
+        padding: 30px;
+    }
+    .the-team .container {
+        padding-bottom: 30px;
+    }
+}
 /* features section */
 .features {
     padding-top: var(--main-padding-2);
@@ -370,6 +422,21 @@ nav ul li a.active {
 
     .features .box i {
         margin-bottom: 20px;
+    }
+
+    footer .last-text {
+        margin-top: 0px;
+        font-size: 12px !important;
+    }
+
+    footer .last-text a {
+        font-size: 12px !important;
+    }
+    .features{
+        padding: 30px;
+    }
+    .features .container{
+        padding-bottom: 30px;
     }
 }
 
@@ -496,4 +563,16 @@ footer .last-text a {
     footer .foot .input p {
         margin-top: 20px;
     }
+}
+@media (max-width:767px){
+  footer .last-text{
+    margin-top: 0px;
+    font-size: 12px !important;
+  }
+    footer .last-text a{
+      font-size: 12px;
+    }
+  footer{
+  padding: 30px 0 0;
+}
 }
