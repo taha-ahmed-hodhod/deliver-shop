@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* variables */
+:root {
+    --main-padding: 60px;
+    --main-padding-2: 100px;
+    --main-color: rgb(162, 118, 219);
+    --main-color-alt: #6610f2;
+}
+
+/* global roules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* font-family: "Work Sans", sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* small */
+@media (max-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* component */
+.master-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.master-title::before {
+    content: '';
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -30px;
+    background-color: var(--main-color);
+
+}
+
+/* Header Section */
+header {
+    padding-top: var(--main-padding);
+}
+
+header .container {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #777;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .container form {
+    position: relative;
+}
+
+header form input {
+    padding: 10px 20px;
+    border: 0;
+    width: 120px;
+    border-bottom: 1px solid #eee;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding-top: 30px;
+    }
+
+    header .container {
+        text-align: center;
+        border-color: #eee;
+        padding-bottom: 10px;
+    }
+
+    header .container form {
+        display: none;
+    }
+
+
+    header .container .main-title {
+        width: 100%;
+        order: -1;
+    }
+
+    header .container ul {
+        margin: 20px auto 10px;
+    }
+}
+
+header form input::placeholder {
+    font-size: 20px;
+    transition: .3s;
+}
+
+header form input:focus::placeholder {
+    opacity: 0;
+}
+
+header form input:focus {
+    outline: none;
+}
+
+header form i {
+    position: absolute;
+    top: 9px;
+    color: #777;
+}
+
+header .main-title {
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid rgba(162, 118, 219, 0.315);
+    color: var(--main-color);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul a {
+    color: #777;
+    display: block;
+    transition: .3s;
+}
+
+header ul a:hover {
+    color: var(--main-color);
+}
+
+/* nav section */
+nav .container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0e0e0e;
+    font-size: 14px;
+    transition: .3s;
+}
+
+@media (max-width:767px) {
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .page-side {
+        text-align: center;
+        padding: 15px 0 !important;
+    }
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--main-color);
+}
+
+.page-side {
+    background-color: rgba(162, 118, 219, 0.11);
+    padding: 25px 0 25px;
+    color: #777;
+}
+
+.page-side span {
+    color: var(--main-color);
+}
+
+/* form section */
+.validate .container {
+    padding: var(--main-padding-2) 0;
+    border-bottom: 1px solid #eee;
+}
+
+.validate .container>h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.validate .count {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.validate .form {
+    flex-basis: calc(50% - 30px);
+    padding: 50px;
+    border: 1px solid var(--main-color);
+}
+
+.validate form .first-last {
+    display: flex;
+    column-gap: 30px;
+}
+
+.validate form .firstname,
+.validate form .lastname {
+    width: 100%;
+}
+
+.validate form .firstname input {
+    flex-basis: calc(50%-30px);
+}
+
+.validate form .lastname input {
+    flex-basis: calc(50%-30px);
+}
+
+.validate form input {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+}
+
+.validate form input:not(input[type="submit"]),
+textarea {
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+.validate form textarea {
+    width: 100%;
+    resize: none;
+    height: 150px;
+    padding: 20px;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+}
+
+.validate form input[type="submit"] {
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 300;
+    font-size: 13px;
+    transition: .3s;
+
+    &:hover {
+        background-color: white;
+        color: var(--main-color);
+    }
+}
+
+.validate .labels {
+    flex-basis: calc(50% - 30px);
+}
+
+.validate .labels .box {
+    border: 1px solid rgb(199, 197, 197);
+    padding: 20px;
+    transition: .3s;
+
+    &:not(:last-child) {
+        margin-bottom: 50px;
+
+    }
+
+    &:hover {
+        border-color: var(--main-color);
+    }
+}
+
+.validate .labels .box h3 {
+    color: var(--main-color);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+.validate .labels .box p {
+    color: rgb(119, 118, 118);
+    font-weight: 100;
+}
+
+@media (max-width:991px) {
+    .validate {
+        padding: 10px;
+    }
+
+    .validate .container {
+        padding: var(--main-padding) 0;
+    }
+
+    .validate .container>h3 {
+        text-align: center;
+
+    }
+
+    .validate .form {
+        flex-basis: 100%;
+        padding: 30px;
+    }
+
+    .validate .labels {
+        flex-basis: 100%;
+    }
+}
+
+/* footer section */
+footer {
+    padding: var(--main-padding) 0 0;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .foot>p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer .foot .link {
+    display: block;
+    text-decoration: none;
+    color: #777;
+    transition: .3s;
+}
+
+footer .foot .link:hover {
+    color: var(--main-color);
+}
+
+footer .foot span {
+    margin-top: 20px;
+    display: block;
+    color: var(--main-color);
+    line-height: 1.6;
+}
+
+footer .foot .location {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+footer .foot .location i {
+    margin-right: 10px;
+    color: var(--main-color);
+    font-size: 18px;
+}
+
+footer .foot .input p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer .foot .input form {
+    position: relative;
+}
+
+footer .foot .input input[type="text"] {
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(151, 147, 147);
+    width: 100%;
+}
+
+footer .foot .input input[type="submit"] {
+    border-radius: 5px;
+    padding: 17px;
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    background-color: var(--main-color);
+    color: white;
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    transition: .3s;
+}
+
+footer .foot .input input[type="submit"]:hover {
+    background-color: white;
+    color: var(--main-color);
+}
+
+footer .last-text {
+    margin: 100px auto 50px;
+    line-height: 1.6;
+    align-items: center;
+    color: #777;
+}
+
+footer .last-text a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width:992px) {
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+
+    footer .foot .location {
+        text-align: center;
+        width: fit-content;
+        margin: 20px auto;
+        flex-direction: column;
+
+    }
+
+    footer .foot .location i {
+        margin-bottom: 15px;
+    }
+
+    footer .foot .input form {
+        width: fit-content;
+        margin: 20px auto;
+    }
+
+    footer .foot>p {
+        margin-top: 20px;
+    }
+
+    footer .foot .input p {
+        margin-top: 20px;
+    }
+}
