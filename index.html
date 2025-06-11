@@ -3,241 +3,160 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taha & Alsayed</title>
-    <link rel="stylesheet" href="shop.css">
-    <link rel="stylesheet" href="all.min.css">
+    <title>Shop Site</title>
+    <!-- normalize file -->
+    <link rel="stylesheet" href="css/normalise.css">
+    <!-- font awoesem file -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- css file -->
+    <link rel="stylesheet" href="css/contact.css">
+        <!-- Fiv icon -->
+    <link rel="shortcut icon" href="images/1684401727abb0dffaf77f932dfb9debfff554b942_thumbnail_720x-removebg-preview.png" type="image/x-icon">
 </head>
 
 <body>
-    <nav class="nav-1">
-        <div class="nav-left">
-            <input type="text" placeholder="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-        <div class="nav-center">
-            <p> <a href="shop.html">Taha & Alsayed</a> </p>
-        </div>
-        <div class=" nav-right ">
-            <div class="icons">
-                <div class="person">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="love">
-                    <i class="fa-sharp fa-solid fa-heart"></i>
-                </div>
-                <div class="market">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <br>
-    <hr>
-    <nav class="nav-2">
-        <div class="home">
-            <a href="shop.html"> HOME </a>
-        </div>
-        <div class="about">
-            <a href="about.html"> ABOUT</a>
-        </div>
-        <div class="shop"> <a href="shoplink.html">SHOP</a></div>
-        <div class="catalogue"><a href="">CATALOGUE</a></div>
-        <div class="new"> <a href="">NEW ARRIVALS</a></div>
-        <div class="contact"> <a href="contact.html">CONTACT</a></div>
-    </nav>
-    <div class="vouh">
-        <p>
-            <span>Home</span>
-        </p>
-    </div>
+    <!-- header section -->
+    <header>
+        <div class="container">
+            <form action="">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="" id="" placeholder="Search">
+            </form>
+            <a href="#" class="main-title">Shop Site</a>
+            <ul class="links">
+                <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                <li><a href=""> <i class="fa-sharp fa-solid fa-heart"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
 
-    <section class="center">
-        <img src="hero_1.jpg" alt="">
-        <div class="center-cap">
-            <h1>Finding Your <br> Perfect Shoes</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Phasellus at iaculis quam. Integer accumsan
-                <br> tincidunt fringilla.
-            </p>
         </div>
-        <div class="button">
-            <button> <a href="">SHOP NOW</a></button>
+    </header>
+    <!-- nav section -->
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </section>
-    <section class="icon-text">
-        <div class="truck">
-            <i class="fa-solid fa-truck"></i>
-            <div class="text-icon">
-                <h3>FREE SHIPPING</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Phasellus at iaculis quam. <br> Integer
-                    accumsan tincidunt fringilla.</p>
-            </div>
+    </nav>
+    <div class="page-side">
+        <div class="container">
+            <span>Home </span> / Contact
         </div>
-        <div class="rotate">
-            <i class="fa-solid fa-rotate-right"></i>
-            <div class="icon-rotate">
-                <h3>FREE RETURNS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Phasellus at iaculis quam. <br> Integer
-                    accumsan
-                    tincidunt fringilla.</p>
-            </div>
-        </div>
-        <div class="question">
-            <i class="fa-sharp fa-solid fa-circle-question"></i>
-            <div class="icon-question">
-                <h3>CUSTOMER SUPPORT</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit. Phasellus at iaculis quam. <br> Integer
-                    accumsan tincidunt fringilla.</p>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="photo-center">
-        <div class="photo-1">
-            <a class="block-1-item" href="#">
-                <figure class="image">
-                    <img src="women.jpg" alt="" class="img-fluid">
-                </figure>
-                <div class="text">
-                    <p>Collections</p>
-                    <h3>women</h3>
+    </div>
+    <!-- form section -->
+    <div class="validate">
+        <section class="container">
+            <h3>Get In Touch</h3>
+            <div class="count">
+                <div class="form">
+                    <form action="">
+                        <div class="first-last">
+                            <div class="firstname">
+                                <label for="firstname">First Name</label>
+                                <br>
+                                <input type="text" id="firstname">
+                            </div>
+                            <div class="lastname">
+                                <label for="lastname">Last Name</label>
+                                <br>
+                                <input type="text" id="lastname">
+                            </div>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" name="" id="email">
+                        </div>
+                        <div class="supject">
+                            <label for="supject">Supject</label>
+                            <br>
+                            <input type="text" id="supject">
+                        </div>
+                        <div class="massage">
+                            <label for="massage">Massage</label>
+                            <br>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <div class="submit">
+                            <input type="submit" value="SEND MASSAGE">
+                        </div>
+                    </form>
                 </div>
-            </a>
-        </div>
-        <div class="photo-2">
-            <a class="block-2-item" href="#">
-                <figure class="image">
-                    <img src="children.jpg" alt="" class="img-fluid">
-                </figure>
-                <div class="text">
-                    <p>Collections</p>
-                    <h3>Children</h3>
-                </div>
-            </a>
-        </div>
-        <div class="photo-3">
-            <a class="block-3-item" href="#">
-                <figure class="image">
-                    <img src="men.jpg" alt="" class="img-fluid">
-                </figure>
-                <div class="text">
-                    <p>Collections</p>
-                    <h3>Men</h3>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="dreem">
-        <div class="dreem-1">
-            <h1>_</h1>
-        </div>
-        <div class="dreem-2">
-            <h3>Featured Products</h3>
-        </div>
-        <div class="dreem-3">
-            <div class="caption">
-                <img src="cloth_1.jpg" alt="">
-                <br>
-                <div class="text-cap">
-                    <a href="">Tank top</a>
-                    <p>finding perfect-shirt</p>
-                    <h3>$50</h3>
+                <div class="labels">
+                    <div class="box">
+                        <h3>NEW YORK</h3>
+                        <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    <div class="box">
+                        <h3>LONDON</h3>
+                        <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
+                    <div class="box">
+                        <h3>CANADA</h3>
+                        <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    </div>
                 </div>
             </div>
-            <div class="caption-2">
-                <img src="shoe_1.jpg" alt="">
-                <br>
-                <div class="text-cap-2">
-                    <a href="">Corater</a>
-                    <p>finding perfect product</p>
-                    <h3>$50</h3>
-                </div>
-            </div>
-            <div class="caption-3">
-                <img src="cloth_2.jpg" alt="">
-                <br>
-                <div class="text-cap-3">
-                    <a href="">polo shirt</a>
-                    <p>finding perfect product</p>
-                    <h3>$50</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- center -->
-    <section class="sasa">
-        <div class="sasa-1">
-            <h1>_</h1>
-        </div>
-        <div class="sasa-2">
-            <h3>Big Sale!</h3>
-        </div>
-        <div class="sasa-3">
-            <div class="photo-sa">
-                <img src="blog_1.jpg" alt="">
-            </div>
-            <div class="text-sa">
-                <h3> <a href="" class="pps">50% less in all items</a></h3>
-                <p class="pps">By <a href=""><span>Carl Smith</span></a> • September 3, 2018</p>
-                <p class="ppp">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Quisquam iste dolor
-                    accusantium facere
-                    corporis ipsum animi <br> deleniti fugiat. Ex, veniam?</p>
-                <button> SHOP NAW</button>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <!-- footer -->
+        </section>
+    </div>
+    <!-- footer section -->
     <footer>
-        <div class="foot-1">
-            <p>Navigations</p>
-            <a href="" class="link-1">Sell online</a><br>
-            <a href="" class="link-2">Features</a><br>
-            <a href="" class="link-3">Shopping cart</a><br>
-            <a href="" class="link-4">Store builder</a><br>
+        <div class="container">
+            <div class="foot">
+        <p>Navigations</p>
+            <a href="#" class="link">Sell online</a><br>
+            <a href="#" class="link">Features</a><br>
+            <a href="#" class="link">Shopping cart</a><br>
+            <a href="#" class="link">Store builder</a><br>
         </div>
-        <div class="foot-2">
-            <a href="" class="link-5">Mobile commerce</a><br>
-            <a href="" class="link-6">Dropshipping</a><br>
-            <a href="" class="link-7">Website development</a><br>
+        <div class="foot">
+            <a href="#" class="link">Mobile commerce</a><br>
+            <a href="#" class="link">Dropshipping</a><br>
+            <a href="#" class="link">Website development</a><br>
         </div>
-        <div class="foot-3">
-            <a href="" class="link-8">Point of sale</a><br>
-            <a href="" class="link-9">Hardware</a><br>
-            <a href="" class="link-10">Software</a><br>
+        <div class="foot">
+            <a href="#" class="link">Point of sale</a><br>
+            <a href="#" class="link">Hardware</a><br>
+            <a href="#" class="link">Software</a><br>
         </div>
-        <div class="foot-4">
+        <div class="foot">
             <p>promo</p>
-            <a href=""><img src="hero_1.jpg" alt=""></a><br>
-            <p><a href="">Finding Your Perfect Shoes <br>
-                    Promo from nuary 15 — 25, 2019</a></p>
+            <a href="#"><img src="images/hero_1.jpg" style="width: 250px;" alt=""></a><br>
+            <span>Finding Your Perfect Shoes <br>
+                    Promo from nuary 15 — 25, 2019</span>
         </div>
-        <div class="foot-5">
-            <p class="poo">Contact Info</p>
+        <div class="foot">
+            <p class="">Contact Info</p>
             <div class="location">
                 <i class="fa-solid fa-location-dot"></i>
                 <p>203 Fake St. Mountain View, San <br> Francisco, California, USA</p>
             </div>
-            <div class="call">
+            <div class="location">
                 <i class="fa-solid fa-phone"></i>
                 <p>+2 392 3929 210</p>
             </div>
-            <div class="email-1">
+            <div class="location">
                 <i class="fa-solid fa-envelope"></i>
                 <p>emailaddress@domain.com</p>
             </div>
             <div class="input">
                 <p>Subscribe</p>
-                <input type="text" placeholder="Email">
-                <button><a href="">SEND</a></button>
+                <form action="">
+                    <input type="text" placeholder="Email">
+                    <input type="submit" value="Send">
+                </form>
             </div>
         </div>
-    </footer>
-    <footer class="footer-text">
-        <p>Copyright ©2022 All rights reserved | This template is made with by &#128156; <span> <a href="">Taha &
-                    alsayed</a> </span>
+        <p class="last-text">Copyright ©2022 All rights reserved | This template is made with 💜 by  <span> <a href="https://vercel.com/tahaahmedhodhods-projects">Eng: Taha Ahmed HodHod</a> </span>
         </p>
+        </div>
     </footer>
 </body>
 
